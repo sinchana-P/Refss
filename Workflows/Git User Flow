@@ -72,7 +72,7 @@
         "activityType": "SIMPLE",
         "name": "Lookup",
         "description": "",
-        "lookupTable": "lt:{\"id\":\"ZMNUgaLPnMCPfewpuQkYN\",\"name\":\"Mapp\"}",
+        "lookupTable": "lt:{\"id\" : \"ZMNUgaLPnMCPfewpuQkYN\", \"name\" : \"User-Info\"}",
         "workflowLoader": "wf:{\"id\":\"\",\"name\":\"\"}",
         "config.name": "Lookup",
         "sourceSchemas": [
