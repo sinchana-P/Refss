@@ -73,7 +73,7 @@
         "activityType": "SIMPLE",
         "name": "Lookup",
         "description": "",
-        "lookupTable": "lt:{\"id\" : \"HeHuJwCEUQgVOBsDADtHn\", \"name\" : \"User-Info\"}",
+        "lookupTable": "lt:{\"id\" : \"HeHuJwCEUQgVOBsDADtHn\", \"name\" : \"User-Info-2\"}",
         "workflowLoader": "wf:{\"id\":\"\",\"name\":\"\"}",
         "config.name": "Lookup",
         "sourceSchemas": [
