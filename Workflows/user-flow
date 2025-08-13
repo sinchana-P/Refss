@@ -1,0 +1,162 @@
+{
+  "folderId": "JpryTaWQbzpPNFuyywASC",
+  "appId": "bBFnSOPJcWxpTjXMYeDfk",
+  "id": "IuiRpFKrHkbtphoiYaVVR",
+  "name": "user-flow",
+  "type": "ORCHESTRATION",
+  "itemType": "workflow",
+  "version": "0.0.1",
+  "steps": [
+    {
+      "id": "UVbuAkThBaTNcLAGbtqVY",
+      "stepName": "End",
+      "stepType": "END",
+      "icon": "",
+      "indicator": "",
+      "description": "",
+      "deletable": true,
+      "config": {
+        "activityType": "END",
+        "activityName": "End",
+        "activityGroup": "Common",
+        "name": "End",
+        "sourceSchemas": [
+          "QDfEEaZwjuqQHVzeaPaXD"
+        ]
+      }
+    },
+    {
+      "id": "QDfEEaZwjuqQHVzeaPaXD",
+      "stepName": "RESTService",
+      "stepType": "EVENT_SOURCE",
+      "icon": "",
+      "indicator": "",
+      "description": "This resource is for HTTP Server",
+      "deletable": true,
+      "config": {
+        "name": "RESTService",
+        "description": "",
+        "path": "",
+        "method": [
+          "GET"
+        ],
+        "allowedMediaTypes": [
+          "application/json"
+        ],
+        "headers": [],
+        "queryParams": [],
+        "pathParams": [],
+        "output": "",
+        "activityType": "EVENT_SOURCE",
+        "activityGroup": "HTTP",
+        "activityName": "RESTService",
+        "showHttpFormSelectionPanel": true,
+        "sourceSchemas": []
+      },
+      "activityCluster": null
+    },
+    {
+      "id": "BJJmEVHHbpDiFeMSPhqYQ",
+      "stepName": "Lookup",
+      "stepType": "SIMPLE",
+      "icon": "",
+      "indicator": "",
+      "description": "",
+      "deletable": true,
+      "config": {
+        "activityName": "Lookup",
+        "activityGroup": "Common",
+        "activityType": "SIMPLE",
+        "name": "Lookup",
+        "description": "",
+        "lookupTable": "lt:{\"id\" : \"ZMNUgaLPnMCPfewpuQkYN\",\"name\" : \"Adidas\"}",
+        "workflowLoader": "wf:{\"id\":\"\",\"name\":\"\"}",
+        "sourceSchemas": [
+          "QDfEEaZwjuqQHVzeaPaXD"
+        ]
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "id": "zCGzozEaCtpNETlQzJyoT",
+      "from": "QDfEEaZwjuqQHVzeaPaXD",
+      "to": "BJJmEVHHbpDiFeMSPhqYQ",
+      "handleMap": {
+        "source": "QDfEEaZwjuqQHVzeaPaXD_1",
+        "target": "BJJmEVHHbpDiFeMSPhqYQ_1"
+      },
+      "name": "",
+      "description": "",
+      "type": "DEFAULT",
+      "lineType": "step",
+      "lineColor": "#8c8c8c"
+    },
+    {
+      "id": "excoLwdxfkeQmZPLwTVDN",
+      "from": "BJJmEVHHbpDiFeMSPhqYQ",
+      "to": "UVbuAkThBaTNcLAGbtqVY",
+      "handleMap": {
+        "source": "BJJmEVHHbpDiFeMSPhqYQ_2",
+        "target": "UVbuAkThBaTNcLAGbtqVY_1"
+      },
+      "name": "",
+      "description": "",
+      "type": "DEFAULT",
+      "lineType": "step",
+      "lineColor": "#8c8c8c"
+    }
+  ],
+  "diagram": {
+    "UVbuAkThBaTNcLAGbtqVY": {
+      "x": 512,
+      "y": 48,
+      "handles": [
+        {
+          "type": "source",
+          "position": "left",
+          "id": "UVbuAkThBaTNcLAGbtqVY_1"
+        }
+      ],
+      "sourcePosition": null,
+      "targetPosition": "left"
+    },
+    "QDfEEaZwjuqQHVzeaPaXD": {
+      "x": 16,
+      "y": 48,
+      "handles": [
+        {
+          "type": "source",
+          "position": "right",
+          "id": "QDfEEaZwjuqQHVzeaPaXD_1"
+        }
+      ],
+      "sourcePosition": "right",
+      "targetPosition": null
+    },
+    "BJJmEVHHbpDiFeMSPhqYQ": {
+      "x": 240,
+      "y": 48,
+      "handles": [
+        {
+          "type": "target",
+          "position": "left",
+          "id": "BJJmEVHHbpDiFeMSPhqYQ_1"
+        },
+        {
+          "type": "source",
+          "position": "right",
+          "id": "BJJmEVHHbpDiFeMSPhqYQ_2"
+        }
+      ],
+      "sourcePosition": "right",
+      "targetPosition": "left"
+    }
+  },
+  "notes": [],
+  "mappings": {},
+  "config": {
+    "name": "user-flow"
+  },
+  "workflowName": "user-flow"
+}
